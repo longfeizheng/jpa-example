@@ -1,6 +1,7 @@
 package cn.merryyou.jpa.domain;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -17,7 +18,7 @@ public class Publisher {
     private int id;
     private String name;
     @ManyToMany(mappedBy = "publishers")
-    private Set<Book> books;
+    private Set<Book> books = new HashSet<>();
 
     public Publisher(){
 

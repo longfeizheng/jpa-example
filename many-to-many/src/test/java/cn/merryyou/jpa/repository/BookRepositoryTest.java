@@ -48,7 +48,18 @@ public class BookRepositoryTest {
 
     @Test
     public void saveTest1() throws Exception{
+        Publisher publisher = publisherRepository.findOne(24);
+        Book bookA = new Book("Book Two");
+        bookA.getPublishers().add(publisher);
+        bookRepository.save(bookA);
+    }
 
+    @Test
+    public void saveTest2() throws Exception{
+        Book two = bookRepository.findOne(18);
+        Publisher publisher = publisherRepository.findOne(25);
+        two.getPublishers().add(publisher);
+        bookRepository.save(two);
     }
 
     @Test
