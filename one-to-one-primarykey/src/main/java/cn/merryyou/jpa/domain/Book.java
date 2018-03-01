@@ -1,5 +1,7 @@
 package cn.merryyou.jpa.domain;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -10,51 +12,28 @@ import java.io.Serializable;
  * @since 1.0
  */
 @Entity
+@Data
 public class Book implements Serializable {
-    private int id;
-    private String name;
-    private BookDetail bookDetail;
-
-    public Book(){
-
-    }
-
-    public Book(String name){
-        this.name = name;
-    }
-
-    public Book(String name, BookDetail bookDetail){
-        this.name = name;
-        this.bookDetail = bookDetail;
-        this.bookDetail.setBook(this);
-    }
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public int getId() {
-        return id;
+    private int id;
+    private String name;
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "book")
+    private BookDetail bookDetail;
+
+    public Book() {
+
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public Book(String name) {
         this.name = name;
     }
 
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "book")
-    public BookDetail getBookDetail() {
-        return bookDetail;
-    }
-
-    public void setBookDetail(BookDetail bookDetail) {
+    public Book(String name, BookDetail bookDetail) {
+        this.name = name;
         this.bookDetail = bookDetail;
+        this.bookDetail.setBook(this);
     }
 
     @Override
