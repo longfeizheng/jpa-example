@@ -13,6 +13,7 @@
         <module>one-to-many</module>
         <module>many-to-many</module>
         <module>many-to-many-extra-columns</module>
+        <module>initial-value-generator</module>
     </modules>
     <packaging>pom</packaging>
 
