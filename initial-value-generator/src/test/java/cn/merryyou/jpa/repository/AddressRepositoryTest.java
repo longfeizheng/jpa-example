@@ -33,6 +33,6 @@ public class AddressRepositoryTest {
         Address result = addressRepository.save(address);
         Assert.assertNotNull(result);
         Assert.assertNotNull(result.getId());
-        Assert.assertTrue(result.getId()>500);
+        Assert.assertTrue(result.getId()>=1000);
     }
 }

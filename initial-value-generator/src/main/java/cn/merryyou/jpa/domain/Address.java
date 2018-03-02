@@ -10,17 +10,17 @@ import javax.persistence.*;
  */
 @Entity
 public class Address {
-    @TableGenerator(
-            name = "Address_Gen",
-            table = "ID_GEN",
-            pkColumnName = "GEN_NAME",
-            valueColumnName = "GEN_VAL",
-            pkColumnValue = "Addr_Gen",
-            initialValue = 100,
-            allocationSize = 10)
     @Id
-    @GeneratedValue(strategy = GenerationType.TABLE, generator = "Address_Gen")
     @Column( name = "ID" )
+    @TableGenerator(
+            name = "AppSeqStore",
+            table = "APP_SEQ_STORE",
+            pkColumnName = "APP_SEQ_NAME",
+            pkColumnValue = "LISTENER_PK",
+            valueColumnName = "APP_SEQ_VALUE",
+            initialValue = 10000,
+            allocationSize = 1 )
+    @GeneratedValue( strategy = GenerationType.TABLE, generator = "AppSeqStore" )
     private long id;
 
     private String street;
