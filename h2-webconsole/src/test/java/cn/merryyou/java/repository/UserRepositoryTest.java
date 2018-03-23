@@ -32,4 +32,12 @@ public class UserRepositoryTest {
         log.info(result.toString());
         Assert.assertNotNull(user.getId());
     }
+
+    @Test
+    public void findOneTest() throws Exception{
+        User user = userRepository.findOne(1l);
+        log.info(user.toString());
+        Assert.assertNotNull(user);
+        Assert.assertTrue(1l==user.getId());
+    }
 }
