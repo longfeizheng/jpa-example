@@ -1,0 +1,1 @@
+INSERT INTO t_user (id, name,url) VALUES (1, 'merryyou','https://longfeizheng.io');
