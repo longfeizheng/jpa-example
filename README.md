@@ -1,5 +1,5 @@
 
-1. [JPA关系映射系列一：one-to-one外键关联](http://blog.csdn.net/xinan8801/article/details/60963535)
+1. [JPA关系映射系列一：one-to-one外键关联](https://longfeizheng.github.io/2018/02/28/JPA%E5%85%B3%E7%B3%BB%E6%98%A0%E5%B0%84%E7%B3%BB%E5%88%97%E4%B8%80-one-to-one%E5%A4%96%E9%94%AE%E5%85%B3%E8%81%94/)
 2. [JPA关系映射系列二：one-to-one主键关联](https://longfeizheng.github.io/2018/03/01/JPA%E5%85%B3%E7%B3%BB%E6%98%A0%E5%B0%84%E7%B3%BB%E5%88%97%E4%BA%8C-one-to-one%E4%B8%BB%E9%94%AE%E5%85%B3%E8%81%94/)
 3. [JPA关系映射系列三：one-to-many和many-to-one](https://longfeizheng.github.io/2018/03/01/JPA%E5%85%B3%E7%B3%BB%E6%98%A0%E5%B0%84%E7%B3%BB%E5%88%97%E4%B8%89-one-to-many%E5%92%8Cmany-to-one/)
 4. [JPA关系映射系列四：many-to-many 关联映射](https://longfeizheng.github.io/2018/03/03/JPA%E5%85%B3%E7%B3%BB%E6%98%A0%E5%B0%84%E7%B3%BB%E5%88%97%E5%9B%9B-many-to-many%E5%85%B3%E9%94%AE%E6%98%A0%E5%B0%84/)
