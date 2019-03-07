@@ -18,6 +18,10 @@ public class CardRepositoryTest {
     private CardRepository cardRepository;
 
 
+    /**
+     * find by all Consumption history by card id
+     * @throws Exception
+     */
     @Test
     public void findOneTest() throws Exception {
         Card card = cardRepository.findOne(1);

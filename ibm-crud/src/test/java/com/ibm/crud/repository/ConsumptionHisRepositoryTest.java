@@ -17,6 +17,10 @@ public class ConsumptionHisRepositoryTest {
     @Autowired
     private ConsumptionHisRepository consumptionHisRepository;
 
+    /**
+     * find by all  Banking Advisors by Consumption history id
+     * @throws Exception
+     */
     @Test
     public void findOneTest() throws Exception {
         ConsumptionHis consumptionHis = consumptionHisRepository.findOne(1);

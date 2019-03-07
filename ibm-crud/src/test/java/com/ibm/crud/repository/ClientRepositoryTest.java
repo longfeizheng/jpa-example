@@ -17,6 +17,10 @@ public class ClientRepositoryTest {
     private ClientRepository clientRepository;
 
 
+    /**
+     * find by all cards and Consumption history by client id
+     * @throws Exception
+     */
     @Test
     public void findOneTest() throws Exception {
         Client client = clientRepository.findOne(1);
