@@ -15,6 +15,7 @@
         <module>many-to-many-extra-columns</module>
         <module>initial-value-generator</module>
         <module>h2-webconsole</module>
+        <module>ibm-crud</module>
     </modules>
     <packaging>pom</packaging>
 
